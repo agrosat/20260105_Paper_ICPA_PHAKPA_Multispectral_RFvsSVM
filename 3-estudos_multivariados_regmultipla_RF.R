@@ -288,10 +288,10 @@ g1 <- ggplot(graf_treino, aes(x = Real, y = Predito)) +
   geom_point(alpha = 0.1, size = 2.0, color = "#00000010", fill = "#ffffff90") +
   geom_abline(intercept = 0, slope = 1, color = "black", linewidth = 0.5) +
   #geom_smooth(method = "lm", se = FALSE, color = "blue") +
-  labs(title = "Real vs Predict (Training)",
+  labs(title = "Observed vs Predicted \n[Training]",
        subtitle = paste0("R² = ", round(r2_train, 3), " | RMSE = ", round(rmse_train, 1)),
-       x = expression("Real (Percent)"), 
-       y = expression("Predict (Percent)")) +
+       x = expression("Observed (percent)"), 
+       y = expression("Predicted (percent)")) +
   coord_fixed(ratio = 1, xlim = c(0, 100), ylim = c(0, 100)) +
   theme_bw(base_size = 12)
 
@@ -300,10 +300,10 @@ g2 <- ggplot(graf_teste, aes(x = Real, y = Predito)) +
   geom_point(alpha = 0.1, size = 2.0, color = "#00000010", fill = "#ffffff90") +
   geom_abline(intercept = 0, slope = 1, color = "black", linewidth = 0.5) +
   #geom_smooth(method = "lm", se = FALSE, color = "blue") +
-  labs(title = "Real vs Predict (Validation)",
+  labs(title = "Observed vs Predicted \n[Validation]",
        subtitle = paste0("R² = ", round(r2_test, 3), " | RMSE = ", round(rmse_test, 1)),
-       x = expression("Real (Percent)"), 
-       y = expression("Predict (Percent)")) +
+       x = expression("Observed (percent)"), 
+       y = expression("Predicted (percent)")) +
   coord_fixed(ratio= 1, xlim = c(0, 100), ylim = c(0, 100)) +
   theme_bw(base_size = 12)
 
