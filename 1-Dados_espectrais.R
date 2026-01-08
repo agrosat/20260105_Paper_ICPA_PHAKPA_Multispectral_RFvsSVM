@@ -61,11 +61,11 @@ tabela_final <- bind_rows(lista_resultados) %>%
     data_voo = as.Date(substr(raster, 1, 8), format = "%Y%m%d")
   ) %>% 
   rename(
-    Blue    = Banda1, 
-    Green   = Banda2, 
-    Red     = Banda3, 
-    RedEdge = Banda5, #Alterei de acordo com as especifiacções em https://support.micasense.com/hc/en-us/articles/360010025413-Altum-Integration-Guide
-    Nir     = Banda4, #Alterei de acordo com as especifiacções em https://support.micasense.com/hc/en-us/articles/360010025413-Altum-Integration-Guide
+    Blue    = Banda1, # espec em https://support.micasense.com/hc/en-us/articles/360010025413-Altum-Integration-Guide
+    Green   = Banda2, # espec em https://support.micasense.com/hc/en-us/articles/360010025413-Altum-Integration-Guide
+    Red     = Banda3, # espec em https://support.micasense.com/hc/en-us/articles/360010025413-Altum-Integration-Guide
+    Nir     = Banda4, # espec em https://support.micasense.com/hc/en-us/articles/360010025413-Altum-Integration-Guide
+    RedEdge = Banda5, # espec em https://support.micasense.com/hc/en-us/articles/360010025413-Altum-Integration-Guide
   ) 
 
 
@@ -157,11 +157,11 @@ tabela_final <- bind_rows(lista_resultados) %>%
     data_voo = as.Date(substr(raster, 1, 8), format = "%Y%m%d")
   ) %>% 
   rename(
-    Blue    = Banda1, 
-    Green   = Banda2, 
-    Red     = Banda3, 
-    RedEdge = Banda5, #Alterei de acordo com as especifiacções em https://support.micasense.com/hc/en-us/articles/360010025413-Altum-Integration-Guide
-    Nir     = Banda4, #Alterei de acordo com as especifiacções em https://support.micasense.com/hc/en-us/articles/360010025413-Altum-Integration-Guide
+    Blue    = Banda1, # espec em https://support.micasense.com/hc/en-us/articles/360010025413-Altum-Integration-Guide
+    Green   = Banda2, # espec em https://support.micasense.com/hc/en-us/articles/360010025413-Altum-Integration-Guide
+    Red     = Banda3, # espec em https://support.micasense.com/hc/en-us/articles/360010025413-Altum-Integration-Guide
+    Nir     = Banda4, # espec em https://support.micasense.com/hc/en-us/articles/360010025413-Altum-Integration-Guide
+    RedEdge = Banda5, # espec em https://support.micasense.com/hc/en-us/articles/360010025413-Altum-Integration-Guide
     # Precisei inclui essa linha pq o shp tinha outro nome para id
     id_Parcela = id
   )
