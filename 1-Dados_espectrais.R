@@ -64,8 +64,8 @@ tabela_final <- bind_rows(lista_resultados) %>%
     Blue    = Banda1, 
     Green   = Banda2, 
     Red     = Banda3, 
-    RedEdge = Banda4, 
-    Nir     = Banda5, 
+    RedEdge = Banda5, #Alterei de acordo com as especifiacções em https://support.micasense.com/hc/en-us/articles/360010025413-Altum-Integration-Guide
+    Nir     = Banda4, #Alterei de acordo com as especifiacções em https://support.micasense.com/hc/en-us/articles/360010025413-Altum-Integration-Guide
   ) 
 
 
@@ -160,8 +160,8 @@ tabela_final <- bind_rows(lista_resultados) %>%
     Blue    = Banda1, 
     Green   = Banda2, 
     Red     = Banda3, 
-    RedEdge = Banda4, 
-    Nir     = Banda5, 
+    RedEdge = Banda5, #Alterei de acordo com as especifiacções em https://support.micasense.com/hc/en-us/articles/360010025413-Altum-Integration-Guide
+    Nir     = Banda4, #Alterei de acordo com as especifiacções em https://support.micasense.com/hc/en-us/articles/360010025413-Altum-Integration-Guide
     # Precisei inclui essa linha pq o shp tinha outro nome para id
     id_Parcela = id
   )
@@ -169,11 +169,11 @@ tabela_final <- bind_rows(lista_resultados) %>%
 # Visualizar
 print(tabela_final)
 
-# Salvar
-writexl::write_xlsx(
-  tabela_final,
-  "./1-Dados/20250917-tabela_bandas_epectrais_11C.xlsx"
-)
+# # Salvar
+# writexl::write_xlsx(
+#   tabela_final,
+#   "./1-Dados/20250917-tabela_bandas_epectrais_11C.xlsx"
+# )
 
 
 tabela_indices_11C <- tabela_final %>%
@@ -216,11 +216,11 @@ tabela_indices_11C <- tabela_final %>%
 # Visualizar
 print(tabela_indices_11C)
 
-# Salvar
-writexl::write_xlsx(
-  tabela_indices_11C,
-  "./1-Dados/20250917-tabelas_indices_11C.xlsx"
-)
+# # Salvar
+# writexl::write_xlsx(
+#   tabela_indices_11C,
+#   "./1-Dados/20250917-tabelas_indices_11C.xlsx"
+# )
 
 
 

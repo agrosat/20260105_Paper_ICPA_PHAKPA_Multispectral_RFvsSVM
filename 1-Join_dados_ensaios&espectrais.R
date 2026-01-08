@@ -11,9 +11,9 @@ dt_ens_idx <- dados_finais %>%
   ) %>% 
   relocate(Nota, .after = DiasPosAplica)
 
-# Salvar
-writexl::write_xlsx(
-  dt_ens_idx,
-  "./1-Dados/20250917-dados_ensaio&indices.xlsx"
-)
+# # Salvar
+# writexl::write_xlsx(
+#   dt_ens_idx,
+#   "./1-Dados/20250917-dados_ensaio&indices.xlsx"
+# )
 
